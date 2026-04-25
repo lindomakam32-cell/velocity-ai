@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VelocityAI — Workflow Automation for Brokers & Service Businesses</title>
-  <meta name="description" content="VelocityAI builds simple workflow automation for brokers and service businesses — claims intake, smart forms, email routing, and WhatsApp alerts — so nothing slips and your team stays focused." />
+  <title>VelocityAI — AI Workflow Automation for Brokers & Service Businesses in South Africa</title>
+  <meta name="description" content="VelocityAI builds custom AI automation for brokers and service businesses in South Africa — claims intake, document collection, WhatsApp alerts, and outbound outreach — so your team stops doing manually what should happen automatically." />
+  <meta name="keywords" content="workflow automation South Africa, AI automation Gauteng, insurance broker automation, claims intake automation, WhatsApp business automation, POPIA compliant automation, document collection automation" />
+  <meta name="author" content="Velocity.ai" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://velocity-ai-424.netlify.app/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://velocity-ai-424.netlify.app/" />
+  <meta property="og:title" content="VelocityAI — Stop doing manually what should happen automatically" />
+  <meta property="og:description" content="We build custom AI automation for brokers and service businesses in South Africa. Claims intake, document collection, WhatsApp alerts — live in days, not months." />
+  <meta property="og:image" content="https://velocity-ai-424.netlify.app/og-image.png" />
+  <meta property="og:locale" content="en_ZA" />
+  <meta property="og:site_name" content="VelocityAI" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VelocityAI — Stop doing manually what should happen automatically" />
+  <meta name="twitter:description" content="Custom AI automation for brokers and service businesses in South Africa. Live in days, not months." />
+  <meta name="twitter:image" content="https://velocity-ai-424.netlify.app/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet">
@@ -711,6 +730,143 @@
       margin-top: 2rem;
     }
 
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+      margin-top: 26px;
+    }
+
+    @media (max-width: 980px) {
+      .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 760px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+    }
+
+    .portfolio-card {
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(226,232,240,0.95);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 14px 34px rgba(15,23,42,0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(37,99,235,0.22);
+    }
+
+    .portfolio-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: rgba(37,99,235,0.06);
+      border: 1px solid rgba(37,99,235,0.12);
+      border-radius: 999px;
+      padding: 5px 14px;
+      width: fit-content;
+    }
+
+    .portfolio-title {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+    }
+
+    .portfolio-desc {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.97rem;
+      line-height: 1.75;
+      flex: 1;
+    }
+
+    .portfolio-outcomes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .outcome-pill {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--green);
+      background: rgba(22,163,74,0.06);
+      border: 1px solid rgba(22,163,74,0.16);
+      border-radius: 999px;
+      padding: 5px 14px;
+    }
+
+        .hero-distinction {
+      display: inline-block;
+      margin: 0 auto 32px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      background: rgba(37,99,235,0.04);
+      border: 1px solid rgba(37,99,235,0.12);
+      border-radius: 999px;
+      padding: 8px 22px;
+      letter-spacing: -0.01em;
+    }
+
+    .checkbox-field {
+      grid-column: 1 / -1;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      margin-top: 2px;
+      accent-color: var(--blue);
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .checkbox-label a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .checkbox-label a:hover {
+      color: var(--blue-hover);
+    }
+
+        .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
     .site-footer {
       border-top: 1px solid rgba(226,232,240,0.88);
       padding: 28px 0 42px;
@@ -787,21 +943,22 @@
       <div class="container">
         <div class="hero-inner">
           <h1 class="hero-title">
-            <span class="line-one">Reply faster.</span>
-            <span class="line-two">Follow up automatically.</span>
+            <span class="line-one">Your team is drowning</span>
+            <span class="line-two">in work a machine should do.</span>
           </h1>
           <p class="hero-subtitle">
-            We build <strong>simple workflow automation</strong> for brokers and service businesses — claims intake, smart forms, email routing, and WhatsApp alerts — so nothing slips and your team stays focused.
+            We build <strong>custom AI automation</strong> for brokers and service businesses in South Africa — so claims get logged, clients get answered, and documents get chased without your staff lifting a finger.
           </p>
+          <p class="hero-distinction">Unlike generic chatbots, we build custom workflows inside your existing tools — no new software to learn.</p>
           <div class="hero-actions">
-            <a href="#audit" class="btn btn-primary">Request Free Workflow Audit</a>
-            <a href="#example" class="btn btn-secondary">View Example</a>
+            <a href="#audit" class="btn btn-primary">Get a Free Workflow Audit</a>
+            <a href="#example" class="btn btn-secondary">See It Working</a>
           </div>
           <div class="feature-strip" aria-label="Core features">
-            <span class="feature-dot"></span><span>Claims &amp; Enquiry Intake</span>
-            <span class="feature-dot"></span><span>Smart Form Capture</span>
-            <span class="feature-dot"></span><span>WhatsApp &amp; Email Alerts</span>
-            <span class="feature-dot"></span><span>24/7 Voice Intake</span>
+            <span class="feature-dot"></span><span>Built for South Africa</span>
+            <span class="feature-dot"></span><span>Works in your existing tools</span>
+            <span class="feature-dot"></span><span>Claims &amp; Enquiry Capture</span>
+            <span class="feature-dot"></span><span>Live in days</span>
           </div>
         </div>
       </div>
@@ -810,9 +967,9 @@
     <section id="example">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">Example</span>
-          <h2>What a live workflow can look like</h2>
-          <p class="section-copy">A client reports an issue. The agent captures the right information, logs it, alerts the broker, and schedules the next step automatically.</p>
+          <span class="eyebrow">Live Example</span>
+          <h2>A claim logged at 10pm. No one woke up to do it.</h2>
+          <p class="section-copy">This is a live AI agent built for an insurance broker. A client reports a claim on WhatsApp. The agent captures every detail, logs it, notifies the broker, and schedules follow-up. Automatically. No one in the office touched it.</p>
         </div>
 
         <div class="demo-shell" aria-label="AI workflow example">
@@ -849,18 +1006,18 @@
         <div class="cards">
           <article class="card">
             <div class="card-number">1</div>
-            <h3>Claims Intake</h3>
-            <p>Standardise claims from the first interaction and reduce back-and-forth before your team even steps in.</p>
+            <h3>Claims &amp; Enquiry Capture</h3>
+            <p>Clients report issues on WhatsApp at any hour. Your agent captures every detail, assigns a reference number, and notifies your team — before anyone in the office starts their day.</p>
           </article>
           <article class="card">
             <div class="card-number">2</div>
-            <h3>Lead Routing</h3>
-            <p>Send the right enquiry to the right person instantly so response time never becomes a bottleneck.</p>
+            <h3>Document Collection</h3>
+            <p>Stop chasing clients for payslips, bank statements, and compliance docs. We automate the request, the follow-up, and the logging — so your staff spend time on work that actually needs them.</p>
           </article>
           <article class="card">
             <div class="card-number">3</div>
-            <h3>Client Follow-Up</h3>
-            <p>Automate reminders, updates, and responses across channels without adding admin to your day.</p>
+            <h3>Outbound Outreach</h3>
+            <p>Personalised emails sent to your leads automatically. Follow-ups triggered when there's no response. Every touchpoint logged — your pipeline moves without anyone manually driving it.</p>
           </article>
         </div>
       </div>
@@ -870,24 +1027,69 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Process</span>
-          <h2>How it works</h2>
-          <p class="section-copy">A simple rollout designed to get value into your operation quickly.</p>
+          <h2>From audit to live system in days — not months</h2>
+          <p class="section-copy">We don't run six-week discovery workshops. We map your workflow, identify the highest-impact automation, build it around your existing tools, and hand it over fast.</p>
         </div>
         <div class="process-grid">
           <article class="process-step">
             <div class="step-num">1</div>
-            <h3>We audit your workflow</h3>
-            <p>We identify the tasks, handoffs, and follow-ups slowing your team down.</p>
+            <h3>Free workflow audit</h3>
+            <p>We spend 30 minutes understanding how your business actually operates — where time gets lost, where things fall through, and what should never need a human to handle.</p>
           </article>
           <article class="process-step">
             <div class="step-num">2</div>
-            <h3>We build the automation</h3>
-            <p>We design the workflow around how your business actually operates.</p>
+            <h3>We build it around you</h3>
+            <p>No off-the-shelf subscriptions. No tools to manage. We build a custom system on your existing channels — WhatsApp, email, Google Sheets — so it works the way your business does.</p>
           </article>
           <article class="process-step">
             <div class="step-num">3</div>
-            <h3>Your team runs faster</h3>
-            <p>Less admin. Better consistency. Faster responses where they matter most.</p>
+            <h3>Your team gets time back</h3>
+            <p>From day one, the system runs. Claims captured. Documents chased. Follow-ups sent. Your staff do work that actually requires a human being.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">What we've built</span>
+          <h2>Real systems. Running right now.</h2>
+          <p class="section-copy">We don't show mockups. Every system below is live, handling real client interactions for real businesses in South Africa.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-tag">Insurance Broker · Gauteng</div>
+            <h3 class="portfolio-title">AI Claims Agent — Pedro</h3>
+            <p class="portfolio-desc">An independent insurance broker was logging claims manually via email and missing after-hours incidents entirely. We built Pedro — a WhatsApp AI agent that captures motor and geyser claims 24/7, assigns reference numbers, logs every submission to a live Google Sheet, and notifies the broker instantly. The broker's team arrives to a structured log every morning. No missed claims. No manual capturing.</p>
+            <div class="portfolio-outcomes">
+              <span class="outcome-pill">✓ Claims captured 24/7</span>
+              <span class="outcome-pill">✓ Zero manual data entry</span>
+              <span class="outcome-pill">✓ Instant broker notification</span>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-tag">Technology Company · Gauteng</div>
+            <h3 class="portfolio-title">AI Outbound Email System — Thabo</h3>
+            <p class="portfolio-desc">A B2B technology company needed to reach hundreds of leads with personalised outreach — but their team was writing every email manually. We built Thabo — an AI system that takes a lead's name, company, and industry, generates a highly personalised cold email, and sends it automatically. Subject lines, body copy, and CTAs are tailored to each recipient. Every send is logged. The team now runs outbound at scale without a single email written by hand.</p>
+            <div class="portfolio-outcomes">
+              <span class="outcome-pill">✓ Personalised at scale</span>
+              <span class="outcome-pill">✓ Zero manual writing</span>
+              <span class="outcome-pill">✓ Full send log</span>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-tag">Lead Generation · Multiple Industries</div>
+            <h3 class="portfolio-title">AI Lead Fetcher &amp; Qualifier — ICP Engine</h3>
+            <p class="portfolio-desc">A service business needed a continuous stream of qualified leads without manual scraping or cold calling. We built an end-to-end lead generation system that fetches leads from the internet based on an Ideal Customer Profile, scores and qualifies each one, logs all data to a central database, sends hyper-personalised outreach emails, and handles replies intelligently. The system runs autonomously — delivering a pipeline of qualified prospects every week with no manual input.</p>
+            <div class="portfolio-outcomes">
+              <span class="outcome-pill">✓ Automated lead fetching</span>
+              <span class="outcome-pill">✓ ICP-based qualification</span>
+              <span class="outcome-pill">✓ Personalised email &amp; reply handling</span>
+            </div>
           </article>
         </div>
       </div>
@@ -897,15 +1099,15 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Pricing</span>
-          <h2>Built around what your business actually needs</h2>
-          <p class="section-copy">Every engagement starts with a free workflow audit. From there, we scope the right level of automation — no guesswork, no overselling.</p>
+          <h2>Scoped to your operation. No guesswork.</h2>
+          <p class="section-copy">Every engagement starts with a free workflow audit. We identify what to automate first, scope the right level of support, and give you a clear number — before any work begins.</p>
         </div>
 
         <div class="pricing-grid">
           <article class="pricing-card">
             <div class="pricing-tier"><span class="tier-dot tier-bronze"></span> Bronze</div>
             <h3 class="pricing-title">Stop losing work<br>to manual sorting</h3>
-            <p class="pricing-desc">For businesses where enquiries, claims, or requests arrive inconsistently and fall through the cracks. We standardise the intake so nothing gets missed and your team always knows what needs attention.</p>
+            <p class="pricing-desc">For businesses where enquiries, claims, or requests fall through the cracks. We standardise intake so nothing gets missed and your team always knows what needs attention.</p>
             <ul class="pricing-features">
               <li><span class="feature-check">✓</span><span>Structured capture from day one</span></li>
               <li><span class="feature-check">✓</span><span>Instant alerts to the right person</span></li>
@@ -918,12 +1120,12 @@
             <div class="pricing-badge">Most Popular</div>
             <div class="pricing-tier"><span class="tier-dot tier-silver"></span> Silver</div>
             <h3 class="pricing-title">Your tools, finally<br>talking to each other</h3>
-            <p class="pricing-desc">For businesses already using a CRM, inbox, or cloud storage — but manually copying information between them. We connect your existing stack so data flows automatically and nothing gets duplicated.</p>
+            <p class="pricing-desc">For businesses using a CRM, inbox, or cloud storage — but manually copying data between them. We connect your existing stack so information flows automatically and nothing gets duplicated.</p>
             <ul class="pricing-features">
               <li><span class="feature-check">✓</span><span>Everything in Bronze</span></li>
-              <li><span class="feature-check">✓</span><span>Leads and contacts sync directly to your CRM</span></li>
+              <li><span class="feature-check">✓</span><span>CRM and cloud storage integration</span></li>
               <li><span class="feature-check">✓</span><span>Documents organised without lifting a finger</span></li>
-              <li><span class="feature-check">✓</span><span>One connected workflow across every tool you use</span></li>
+              <li><span class="feature-check">✓</span><span>One connected workflow across every tool</span></li>
             </ul>
             <a href="#audit" class="btn btn-primary pricing-action">Book Free Audit</a>
           </article>
@@ -931,12 +1133,12 @@
           <article class="pricing-card">
             <div class="pricing-tier"><span class="tier-dot tier-gold"></span> Gold</div>
             <h3 class="pricing-title">Your operation runs<br>even when you don't</h3>
-            <p class="pricing-desc">For businesses where after-hours enquiries cost revenue and follow-up is inconsistent. We add voice intake, automated sequences, and reporting so your operation stays responsive around the clock.</p>
+            <p class="pricing-desc">For businesses where after-hours enquiries cost revenue and follow-up is inconsistent. We add voice intake, automated sequences, and reporting so nothing gets missed around the clock.</p>
             <ul class="pricing-features">
               <li><span class="feature-check gold">✓</span><span>Everything in Silver</span></li>
               <li><span class="feature-check gold">✓</span><span>After-hours voice capture — no missed calls</span></li>
               <li><span class="feature-check gold">✓</span><span>Automated follow-up for outstanding items</span></li>
-              <li><span class="feature-check gold">✓</span><span>Volume and response time visibility at a glance</span></li>
+              <li><span class="feature-check gold">✓</span><span>Volume and response time visibility</span></li>
             </ul>
             <a href="#audit" class="btn btn-secondary pricing-action">Book Free Audit</a>
           </article>
@@ -996,6 +1198,12 @@
               <label for="workflow">What process is slowing your team down most?</label>
               <textarea id="workflow" name="workflow" placeholder="E.g. claims intake, enquiries, follow-ups, bookings, document collection..." required></textarea>
             </div>
+            <div class="field full checkbox-field">
+              <label class="checkbox-label">
+                <input type="checkbox" id="popiaConsent" name="popiaConsent" required />
+                <span>I consent to VelocityAI storing and processing my personal information in accordance with POPIA. You may contact me about workflow automation services. View our <a href="#" onclick="showToS(event)">Terms of Service</a>.</span>
+              </label>
+            </div>
             <div class="form-actions">
               <button type="submit" class="btn btn-primary">Request Free Workflow Audit</button>
             </div>
@@ -1012,15 +1220,16 @@
       <div class="footer-row">
         <div>
           <div class="brand-logo"><span class="velocity">Velocity</span><span class="ai">AI</span></div>
-          <div class="footer-copy">Workflow automation for brokers and service businesses.</div>
+          <div class="footer-copy">Custom AI automation for brokers and service businesses in South Africa.</div>
         </div>
         <div class="footer-links" aria-label="Footer navigation">
           <a href="#top">Home</a>
           <a href="#example">Example</a>
           <a href="#what-we-build">What We Build</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="#pricing">Pricing</a>
           <a href="#audit">Free Audit</a>
-          <a href="terms-of-service.pdf" target="_blank" rel="noopener">Terms of Service</a>
+          <a href="#" onclick="showToS(event)">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -1060,6 +1269,7 @@
         company: document.getElementById('company').value.trim(),
         industry: document.getElementById('industry').value,
         budget: document.getElementById('budget').value,
+        popiaConsent: document.getElementById('popiaConsent').checked,
         workflow: document.getElementById('workflow').value.trim(),
         source: 'VelocityAI Website',
         page: window.location.href,
@@ -1104,3 +1314,65 @@
   </script>
 </body>
 </html>
+
+<!-- ── Inline Terms of Service Overlay ── -->
+<div id="tos-overlay" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,0.6); z-index:9999; overflow-y:auto; padding:40px 20px;">
+  <div style="max-width:760px; margin:0 auto; background:#fff; border-radius:16px; padding:56px 48px; position:relative; font-family:'DM Sans',sans-serif; color:#0F172A; line-height:1.7;">
+    <button onclick="hideToS()" style="position:absolute; top:24px; right:24px; background:none; border:1px solid #E2E8F0; border-radius:8px; padding:8px 16px; font-size:0.85rem; cursor:pointer; color:#64748B; font-family:inherit;">✕ Close</button>
+
+    <div style="display:inline-block; background:rgba(37,99,235,0.07); border:1px solid rgba(37,99,235,0.15); border-radius:999px; padding:6px 16px; font-size:0.78rem; font-weight:500; color:#2563EB; letter-spacing:0.04em; text-transform:uppercase; margin-bottom:20px;">Legal Document</div>
+
+    <h1 style="font-family:'Playfair Display',serif; font-size:2.4rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:12px;">Terms of Service</h1>
+    <p style="font-size:0.875rem; color:#64748B; margin-bottom:48px;">Effective Date: April 2026 &nbsp;·&nbsp; Last Updated: April 2026</p>
+
+    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:28px 32px; margin-bottom:48px; font-size:0.95rem; color:#64748B;">
+      These Terms of Service ("Terms") govern your engagement with Velocity.ai ("we", "us", "our"), a workflow automation agency registered in South Africa. By signing a service agreement or proceeding with an engagement, you ("Client") agree to be bound by these Terms.
+    </div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">01</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Services</h2><p style="color:#334155; font-size:0.95rem; margin-bottom:12px;">Velocity.ai provides custom workflow automation services including but not limited to: AI agent development, claims processing automation, document collection systems, outbound email automation, WhatsApp integration, and related consulting services.</p><p style="color:#334155; font-size:0.95rem;">The specific scope of services, deliverables, and timelines will be outlined in a separate Service Agreement provided to the Client prior to commencement of any work.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">02</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Fees and Payment</h2><ul style="list-style:none; padding:0; color:#334155; font-size:0.95rem;"><li style="padding-left:18px; position:relative; margin-bottom:10px;">A once-off setup fee is charged prior to or upon delivery of the completed automation system.</li><li style="padding-left:18px; position:relative; margin-bottom:10px;">A monthly retainer is charged for ongoing maintenance, monitoring, and support.</li><li style="padding-left:18px; position:relative; margin-bottom:10px;">Payment terms are specified in the individual Service Agreement. Late payments may result in suspension of services.</li><li style="padding-left:18px; position:relative; margin-bottom:10px;">All fees are quoted and payable in South African Rand (ZAR) unless otherwise agreed in writing.</li><li style="padding-left:18px; position:relative;">From the third client engagement onwards, a 50% deposit of the setup fee is required before any build work commences.</li></ul></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">03</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Trial Periods</h2><p style="color:#334155; font-size:0.95rem;">Where a free trial period is offered, it is granted at the sole discretion of Velocity.ai and applies only to the specific scope agreed in writing. Trial periods do not guarantee ongoing services and may be withdrawn if the Client fails to provide required access, credentials, or information within a reasonable timeframe.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">04</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Client Responsibilities</h2><ul style="list-style:none; padding:0; color:#334155; font-size:0.95rem;"><li style="padding-left:18px; margin-bottom:10px;">Provide accurate and complete information required to build and configure the automation system.</li><li style="padding-left:18px; margin-bottom:10px;">Grant necessary access to relevant platforms, accounts, and tools in a timely manner.</li><li style="padding-left:18px; margin-bottom:10px;">Designate a primary point of contact for the duration of the engagement.</li><li style="padding-left:18px; margin-bottom:10px;">Ensure that all data provided to Velocity.ai complies with applicable privacy laws, including POPIA.</li><li style="padding-left:18px;">Notify Velocity.ai promptly of any changes to business processes that may affect the automation system.</li></ul></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">05</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Intellectual Property</h2><p style="color:#334155; font-size:0.95rem; margin-bottom:12px;">All automation workflows, AI agent configurations, prompts, and systems built by Velocity.ai remain the intellectual property of Velocity.ai until full payment has been received. Upon receipt of all outstanding fees, the Client is granted a non-exclusive, non-transferable licence to use the delivered system for their own internal business operations.</p><p style="color:#334155; font-size:0.95rem;">Velocity.ai retains the right to use anonymised descriptions of client engagements as case studies for marketing purposes, unless the Client explicitly opts out in writing.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">06</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Confidentiality</h2><p style="color:#334155; font-size:0.95rem;">Both parties agree to keep confidential any proprietary information, business data, or trade secrets disclosed during the engagement. This obligation survives termination of the agreement for a period of two (2) years.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">07</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Limitation of Liability</h2><p style="color:#334155; font-size:0.95rem; margin-bottom:12px;">Velocity.ai will not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use the delivered automation systems. Our total liability to the Client for any claim arising under these Terms shall not exceed the total fees paid by the Client in the three (3) months preceding the claim.</p><p style="color:#334155; font-size:0.95rem;">Velocity.ai does not guarantee specific business outcomes, revenue increases, or cost savings as a result of automation services.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">08</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Third-Party Tools and Platforms</h2><p style="color:#334155; font-size:0.95rem; margin-bottom:12px;">Our services may involve the use of third-party platforms including but not limited to Make.com, Jotform, Google Workspace, WhatsApp Business API, and various AI providers. Velocity.ai is not responsible for downtime, changes in pricing, or policy changes by these third-party providers.</p><p style="color:#334155; font-size:0.95rem;">Any additional costs arising from third-party platform upgrades required to support the Client's usage will be communicated in advance and are the Client's responsibility.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">09</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Termination</h2><p style="color:#334155; font-size:0.95rem;">Either party may terminate the engagement with 30 days written notice. Upon termination, the Client remains liable for all fees incurred up to the termination date. Velocity.ai will provide reasonable handover documentation for any systems built and fully paid for.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">10</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Governing Law</h2><p style="color:#334155; font-size:0.95rem;">These Terms are governed by the laws of the Republic of South Africa. Any disputes arising from these Terms shall be subject to the jurisdiction of the South African courts.</p></div>
+
+    <div style="margin-bottom:40px;"><div style="font-size:0.75rem; font-weight:500; color:#2563EB; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:6px;">11</div><h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; padding-bottom:12px; border-bottom:1px solid #E2E8F0; margin-bottom:16px;">Changes to These Terms</h2><p style="color:#334155; font-size:0.95rem;">Velocity.ai reserves the right to update these Terms at any time. Clients will be notified of material changes via email. Continued use of our services after notification constitutes acceptance of the updated Terms.</p></div>
+
+    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:28px 32px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+      <div><p style="font-weight:500; margin-bottom:4px; font-size:0.95rem;">Questions about these Terms?</p><p style="color:#64748B; font-size:0.9rem;">Reach us at <a href="mailto:hello@velocity.ai" style="color:#2563EB; text-decoration:none; font-weight:500;">hello@velocity.ai</a></p></div>
+      <p style="color:#64748B; font-size:0.85rem;">Velocity.ai &nbsp;·&nbsp; Germiston, Gauteng &nbsp;·&nbsp; South Africa</p>
+    </div>
+
+    <div style="text-align:center; margin-top:32px;">
+      <button onclick="hideToS()" style="background:#2563EB; color:#fff; border:none; border-radius:8px; padding:12px 32px; font-size:0.9rem; font-weight:500; cursor:pointer; font-family:inherit;">Close Terms of Service</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showToS(e) {
+    if (e) e.preventDefault();
+    document.getElementById('tos-overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function hideToS() {
+    document.getElementById('tos-overlay').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  document.getElementById('tos-overlay').addEventListener('click', function(e) {
+    if (e.target === this) hideToS();
+  });
+</script>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service — Velocity.ai</title>
+  <meta name="description" content="Terms of Service for Velocity.ai — Workflow Automation Agency, South Africa."/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --border: #E2E8F0;
+      --text: #0F172A;
+      --muted: #64748B;
+      --accent: #2563EB;
+      --accent-soft: rgba(37,99,235,0.07);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-family: "Playfair Display", serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+    }
+    .brand .v { color: var(--text); }
+    .brand .ai { color: var(--accent); }
+
+    .back-link {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 0.2s;
+    }
+    .back-link:hover { opacity: 0.7; }
+
+    /* ── Page Hero ── */
+    .page-hero {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .doc-badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      border: 1px solid rgba(37,99,235,0.15);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .page-hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 56px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .section {
+      margin-bottom: 52px;
+    }
+
+    .section-number {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .section h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section p {
+      color: #334155;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul {
+      list-style: none;
+      margin: 12px 0;
+      padding: 0;
+    }
+
+    .section ul li {
+      position: relative;
+      padding-left: 20px;
+      color: #334155;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .section ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.5;
+    }
+
+    /* ── Contact block ── */
+    .contact-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-top: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .contact-block p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .contact-block a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-block a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand"><span class="v">Velocity</span><span class="ai">.ai</span></a>
+      <a href="index.html" class="back-link">← Back to home</a>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="doc-badge">Legal Document</div>
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective Date: April 2026 &nbsp;·&nbsp; Last Updated: April 2026</p>
+  </div>
+
+  <div class="content">
+
+    <div class="intro">
+      These Terms of Service ("Terms") govern your engagement with Velocity.ai ("we", "us", "our"), a workflow automation agency registered in South Africa. By signing a service agreement or proceeding with an engagement, you ("Client") agree to be bound by these Terms.
+    </div>
+
+    <div class="section">
+      <div class="section-number">01</div>
+      <h2>Services</h2>
+      <p>Velocity.ai provides custom workflow automation services including but not limited to: AI agent development, claims processing automation, document collection systems, outbound email automation, WhatsApp integration, and related consulting services.</p>
+      <p>The specific scope of services, deliverables, and timelines will be outlined in a separate Service Agreement provided to the Client prior to commencement of any work.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">02</div>
+      <h2>Fees and Payment</h2>
+      <p>All engagements are structured as follows:</p>
+      <ul>
+        <li>A once-off setup fee is charged prior to or upon delivery of the completed automation system.</li>
+        <li>A monthly retainer is charged for ongoing maintenance, monitoring, and support.</li>
+        <li>Payment terms are specified in the individual Service Agreement. Late payments may result in suspension of services.</li>
+        <li>All fees are quoted and payable in South African Rand (ZAR) unless otherwise agreed in writing.</li>
+        <li>From the third client engagement onwards, a 50% deposit of the setup fee is required before any build work commences.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-number">03</div>
+      <h2>Trial Periods</h2>
+      <p>Where a free trial period is offered, it is granted at the sole discretion of Velocity.ai and applies only to the specific scope agreed in writing. Trial periods do not guarantee ongoing services and may be withdrawn if the Client fails to provide required access, credentials, or information within a reasonable timeframe.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">04</div>
+      <h2>Client Responsibilities</h2>
+      <p>The Client agrees to:</p>
+      <ul>
+        <li>Provide accurate and complete information required to build and configure the automation system.</li>
+        <li>Grant necessary access to relevant platforms, accounts, and tools in a timely manner.</li>
+        <li>Designate a primary point of contact for the duration of the engagement.</li>
+        <li>Ensure that all data provided to Velocity.ai complies with applicable privacy laws, including POPIA.</li>
+        <li>Notify Velocity.ai promptly of any changes to business processes that may affect the automation system.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-number">05</div>
+      <h2>Intellectual Property</h2>
+      <p>All automation workflows, AI agent configurations, prompts, and systems built by Velocity.ai remain the intellectual property of Velocity.ai until full payment has been received. Upon receipt of all outstanding fees, the Client is granted a non-exclusive, non-transferable licence to use the delivered system for their own internal business operations.</p>
+      <p>Velocity.ai retains the right to use anonymised descriptions of client engagements as case studies for marketing purposes, unless the Client explicitly opts out in writing.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">06</div>
+      <h2>Confidentiality</h2>
+      <p>Both parties agree to keep confidential any proprietary information, business data, or trade secrets disclosed during the engagement. This obligation survives termination of the agreement for a period of two (2) years.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">07</div>
+      <h2>Limitation of Liability</h2>
+      <p>Velocity.ai will not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use the delivered automation systems. Our total liability to the Client for any claim arising under these Terms shall not exceed the total fees paid by the Client in the three (3) months preceding the claim.</p>
+      <p>Velocity.ai does not guarantee specific business outcomes, revenue increases, or cost savings as a result of automation services.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">08</div>
+      <h2>Third-Party Tools and Platforms</h2>
+      <p>Our services may involve the use of third-party platforms including but not limited to Make.com, Jotform, Google Workspace, WhatsApp Business API, and various AI providers. Velocity.ai is not responsible for downtime, changes in pricing, or policy changes by these third-party providers.</p>
+      <p>Any additional costs arising from third-party platform upgrades required to support the Client's usage will be communicated in advance and are the Client's responsibility.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">09</div>
+      <h2>Termination</h2>
+      <p>Either party may terminate the engagement with 30 days written notice. Upon termination, the Client remains liable for all fees incurred up to the termination date. Velocity.ai will provide reasonable handover documentation for any systems built and fully paid for.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">10</div>
+      <h2>Governing Law</h2>
+      <p>These Terms are governed by the laws of the Republic of South Africa. Any disputes arising from these Terms shall be subject to the jurisdiction of the South African courts.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-number">11</div>
+      <h2>Changes to These Terms</h2>
+      <p>Velocity.ai reserves the right to update these Terms at any time. Clients will be notified of material changes via email. Continued use of our services after notification constitutes acceptance of the updated Terms.</p>
+    </div>
+
+    <div class="contact-block">
+      <div>
+        <p style="font-weight:500; color:#0F172A; margin-bottom:4px;">Questions about these Terms?</p>
+        <p>Reach us at <a href="mailto:hello@velocity.ai">hello@velocity.ai</a></p>
+      </div>
+      <p>Velocity.ai &nbsp;·&nbsp; Germiston, Gauteng &nbsp;·&nbsp; South Africa</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Velocity.ai &nbsp;·&nbsp; <a href="index.html">Back to home</a></p>
+  </footer>
+
+</body>
+</html>
