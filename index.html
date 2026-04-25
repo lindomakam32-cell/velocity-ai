@@ -605,6 +605,52 @@
 
     .cta-section { padding-bottom: 92px; }
 
+    /* About Section */
+    .about-inner {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .about-photo img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+      display: block;
+      filter: grayscale(8%);
+    }
+    .about-content { padding-top: 12px; }
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+    .about-heading {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+      margin-bottom: 28px;
+    }
+    .about-content p {
+      font-size: 1rem;
+      color: #4A5568;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .about-content p:last-child { margin-bottom: 0; }
+    .about-close { font-weight: 500; color: var(--navy) !important; }
+    @media (max-width: 860px) {
+      .about-inner { grid-template-columns: 1fr; gap: 40px; }
+      .about-photo img { aspect-ratio: 4/3; max-height: 420px; }
+    }
+
     .cta-panel {
       text-align: center;
       padding: 54px 28px;
@@ -947,7 +993,7 @@
             <span class="line-two">in work a machine should do.</span>
           </h1>
           <p class="hero-subtitle">
-            We build <strong>custom AI automation</strong> for brokers and service businesses in South Africa — so claims get logged, clients get answered, and documents get chased without your staff lifting a finger.
+            Every claim typed into a spreadsheet. Every follow-up sent manually. Every document chased by phone. <strong>We build the systems that handle that — so your team handles clients instead.</strong>
           </p>
           <p class="hero-distinction">Unlike generic chatbots, we build custom workflows inside your existing tools — no new software to learn.</p>
           <div class="hero-actions">
@@ -959,6 +1005,24 @@
             <span class="feature-dot"></span><span>Works in your existing tools</span>
             <span class="feature-dot"></span><span>Claims &amp; Enquiry Capture</span>
             <span class="feature-dot"></span><span>Live in days</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-photo">
+            <img src="lindo.jpg" alt="Lindo Makam — Founder, Velocity.ai" loading="lazy"/>
+          </div>
+          <div class="about-content">
+            <div class="section-label">The Founder</div>
+            <h2 class="about-heading">I built Velocity.ai because I watched capable people drown in admin.</h2>
+            <p>My name is Lindo Makam. I started Velocity.ai after spending time in logistics and supply chain — watching operations teams spend half their day on work that had nothing to do with their actual job. Typing the same information into three different systems. Chasing documents on WhatsApp. Writing follow-up emails one by one.</p>
+            <p>I knew automation could fix it. Not the expensive, six-month enterprise kind. The kind that plugs into what you already use and works by next week.</p>
+            <p></p>
+            <p class="about-close">We build for South African businesses that are serious about reclaiming their team's time.</p>
           </div>
         </div>
       </div>
